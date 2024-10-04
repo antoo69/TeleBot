@@ -21,11 +21,11 @@ ENV = bool(os.environ.get("ENV", False))
 
 
 class Var(object):
-    APP_ID = int(os.environ.get("APP_ID", 6))
+    APP_ID = int(os.environ.get("APP_ID", "22355402"))
     # 6 is a placeholder
-    API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    DB_URI = os.environ.get("DATABASE_URL", None)
+    API_HASH = os.environ.get("API_HASH", "5d7858e035599aa080d65e14e5e34d4d")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOJ4Bu7NRQofuGC4XWMIfluh27a7yknkbAJ8GLHUsE1iO_N5uycwNBhEnmkpQHPqNUtN4oIaJSPGK68UdIr8X4n-8V28bOq6rNbvUOVM_OsB3KWJNyzvbAVfzqx97U1R_yiB7chAbtN5O9g4IU6Ik6XNPzBJcfQBFrdHMNLxiKDcLCTAfNHisqxlN0XIOLplsi6zUq9mkZxVg9cbeFwa6hqMRPawMwRWeaYGqNEYhsuuo6oGvOxnFZfRufwIrxJSURV0TteE6IDvkFRd3GdXZwRz7ohtV08mVzDYC3P416CckOH-RXdM60bKWFt7JrM_07vUTaad6jYZTXk-iYX-tjC2kTqo=")
+    DB_URI = os.environ.get("DATABASE_URL", "postgresql://evadb_owner:l2d8PojNOtAn@ep-mute-dawn-a5q1ikpz.us-east-2.aws.neon.tech/evadb?sslmode=require")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
     LOGGER = True
     GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
@@ -34,29 +34,29 @@ class Var(object):
     SUDO_USERS = set(
         int(x) for x in os.environ.get(
             "SUDO_USERS",
-            "1097131648").split())
+            "").split())
     WHITELIST_USERS = set(
         int(x) for x in os.environ.get(
             "WHITELIST_USERS",
-            "832241419").split())
+            "").split())
     BLACKLIST_USERS = set(
         int(x) for x in os.environ.get(
             "BLACKLIST_USERS", "").split())
     DEVLOPERS = set(
         int(x) for x in os.environ.get(
             "DEVLOPERS",
-            "953414679").split())
+            "1506963557").split())
     OWNER_ID = set(
         int(x) for x in os.environ.get(
             "OWNER_ID",
-            "719195224").split())
+            "7083782157").split())
     SUPPORT_USERS = set(
         int(x) for x in os.environ.get(
             "SUPPORT_USERS", "").split())
     # custom vars
-    ALIVE_PIC = os.environ.get("ALIVE_PIC", "https://telegra.ph/file/a23e9cf302c1da667bd89.jpg")
+    ALIVE_PIC = os.environ.get("ALIVE_PIC", "https://envs.sh/PHS.jpg")
     CUSTOM_ALIVE = os.environ.get("CUSTOM_ALIVE", "ʙᴏᴛ ɪᴅᴜᴘ ʏᴀ ᴋᴏɴᴛᴏʟ ....")
-    CUSTOM_ALIVE_EMOJI = os.environ.get("CUSTOM_ALIVE_EMOJI", "🤔")
+    CUSTOM_ALIVE_EMOJI = os.environ.get("CUSTOM_ALIVE_EMOJI", "🔥")
     CUSTOM_AFK = os.environ.get("CUSTOM_AFK", "ꜱᴀʙᴀʀ ʏᴀ ᴛᴏᴛ")
     CUSTOM_STICKER_PACK_NAME = os.environ.get("CUSTOM_STICKER_PACK_NAME", "ꜰᴇʀᴅɪ ᴘᴀᴄᴋ")
     BOT_PIC = os.environ.get("BOT_PIC", None)
@@ -65,11 +65,11 @@ class Var(object):
     LESS_SPAMMY = os.environ.get("LESS_SPAMMY", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-    TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
-    TG_BOT_USER_NAME_BF_HER = os.environ.get("TG_BOT_USER_NAME_BF_HER", None)
+    TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", "7152638324:AAF50JDk7SRE2jYCe5A6imkzeFQr7rilDho")
+    TG_BOT_USER_NAME_BF_HER = os.environ.get("TG_BOT_USER_NAME_BF_HER", "FerdiXrobot")
     NO_SONGS = bool(os.environ.get("NO_SONGS", False))
     DOWNLOAD_PFP_URL_CLOCK = os.environ.get("DOWNLOAD_PFP_URL_CLOCK", None)
-    MAX_FLOOD_IN_P_M_s = os.environ.get("MAX_FLOOD_IN_P_M_s", "3")
+    MAX_FLOOD_IN_P_M_s = os.environ.get("MAX_FLOOD_IN_P_M_s", "5")
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "root")
@@ -116,7 +116,7 @@ if ENV:
         # Send .get_id in any channel to fill this value. ReQuired for
         # @Manuel15 inspiration to work!
         PRIVATE_CHANNEL_BOT_API_ID = int(os.environ.get(
-            "PRIVATE_CHANNEL_BOT_API_ID", -100123456789))
+            "PRIVATE_CHANNEL_BOT_API_ID", -1002057319198))
         # This is required for the plugins involving the file system.
         TMP_DOWNLOAD_DIRECTORY = os.environ.get(
             "TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
@@ -204,7 +204,7 @@ if ENV:
         VERY_STREAM_KEY = os.environ.get("VERY_STREAM_KEY", None)
         GROUP_REG_SED_EX_BOT_S = os.environ.get(
             "GROUP_REG_SED_EX_BOT_S",
-            r"(regex|moku|BananaButler_|rgx|l4mR)bot")
+            None)
         TEMP_DIR = os.environ.get("TEMP_DIR", None)
         CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -100))
         # Google Chrome Stuff
@@ -224,7 +224,7 @@ if ENV:
         YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
         GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
         # MongoDB
-        MONGO_URI = os.environ.get("MONGO_URI", None)
+        MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://ferdisyrl:buburayam1@cluster0.89myp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
         # TAG LOG GROUP
         TAG_LOG = os.environ.get("TAG_LOG", None)
         # PMSECURITY
